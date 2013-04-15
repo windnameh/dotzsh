@@ -67,6 +67,17 @@ bindkey -M viins '^F' history-incremental-pattern-search-forward
 export GTAGSFORCECPP=
 
 #
+# 256 terminal
+#
+export TERM='xterm-256color'
+
+#
+# color minicom
+#
+export MINICOM='-c on'
+
+
+#
 # zsh completion
 #
 fpath=($ZSH_SUBMOD/zsh-completions/src $fpath)
