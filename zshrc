@@ -81,3 +81,9 @@ export MINICOM='-c on'
 # zsh completion
 #
 fpath=($ZSH_SUBMOD/zsh-completions/src $fpath)
+
+#
+# aliases
+#
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
