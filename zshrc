@@ -87,3 +87,5 @@ fpath=($ZSH_SUBMOD/zsh-completions/src $fpath)
 #
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
+alias v='vim'
+alias m='make'
