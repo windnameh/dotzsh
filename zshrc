@@ -37,7 +37,7 @@ ZSH_THEME="tjkirch_mod"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git git-extras git-fast github git-remote-branch)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,3 +92,5 @@ alias e='emacsclient -t'
 alias ec='emacsclient -c'
 alias v='vim'
 alias m='make'
+alias git='nocorrect git'
+alias g='nocorrect git'
