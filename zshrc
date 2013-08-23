@@ -1,5 +1,5 @@
 # General environment settings
-export PATH=$PATH:$HOME/bin
+export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH_SUBMOD=$HOME/.zsh/submodule
