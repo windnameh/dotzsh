@@ -37,7 +37,7 @@ ZSH_THEME="tjkirch_mod"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git git-extras git-fast github git-remote-branch)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,14 +48,8 @@ source $ZSH_SUBMOD/zsh-history-substring-search/zsh-history-substring-search.zsh
 #
 # history search
 #
-#bindkey "${terminfo[kcuu1]}" up-line-or-search
-#bindkey "${terminfo[kcud1]}" down-line-or-search
-autoload up-line-or-beginning-search
-autoload down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
-bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
 
 # Search backwards and forwards with a pattern
 bindkey -M vicmd '/' history-incremental-pattern-search-backward
