@@ -10,8 +10,6 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="random"
-#ZSH_THEME="tjkirch_mod"
-#ZSH_THEME="muse"
 ZSH_THEME="miloshadzic"
 
 # Example aliases
@@ -39,17 +37,15 @@ ZSH_THEME="miloshadzic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras git-fast github git-remote-branch)
+plugins=(debian git git-extras git-fast github git-remote-branch \
+	history history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-
+# submodule
 source $ZSH_SUBMOD/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $ZSH_SUBMOD/zsh-history-substring-search/zsh-history-substring-search.zsh
-#
+
 # history search
-#
 autoload up-line-or-beginning-search
 autoload down-line-or-beginning-search
 zle -N up-line-or-beginning-search
@@ -64,30 +60,20 @@ bindkey -M vicmd '?' history-incremental-pattern-search-forward
 bindkey -M viins '^R' history-incremental-pattern-search-backward
 bindkey -M viins '^F' history-incremental-pattern-search-forward
 
-#
 # gtags *.h search for C++ class
-#
 export GTAGSFORCECPP=
 
-#
 # 256 terminal
-#
 export TERM='xterm-256color'
 
-#
 # color minicom
-#
 export MINICOM='-c on'
 
 
-#
 # zsh completion
-#
 fpath=($ZSH_SUBMOD/zsh-completions/src $fpath)
 
-#
 # aliases
-#
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
 alias v='vim'
