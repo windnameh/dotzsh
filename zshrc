@@ -1,5 +1,5 @@
 # General environment settings
-export PATH=$PATH:$HOME/bin:$HOME/CLANG+LLVM/bin
+export PATH=$HOME/bin:$HOME/CLANG+LLVM/bin:$PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH_SUBMOD=$HOME/.zsh/submodule
