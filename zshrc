@@ -37,7 +37,7 @@ ZSH_THEME="miloshadzic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(debian git git-extras git-fast github git-remote-branch \
+plugins=(git git-extras git-fast github git-remote-branch \
 	history history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
