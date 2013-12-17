@@ -38,7 +38,7 @@ ZSH_THEME="miloshadzic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git git-extras git-fast github git-remote-branch \
-	history history-substring-search)
+	history history-substring-search z)
 
 source $ZSH/oh-my-zsh.sh
 
