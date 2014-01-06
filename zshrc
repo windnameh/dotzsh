@@ -1,5 +1,5 @@
 # General environment settings
-export PATH=$HOME/bin:$HOME/CLANG+LLVM/bin:$PATH
+export PATH=$HOME/bin:$PATH:$HOME/CLANG+LLVM/bin
 
 # Path to your oh-my-zsh configuration.
 ZSH_SUBMOD=$HOME/.zsh/submodule
@@ -20,7 +20,7 @@ ZSH_THEME="miloshadzic"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE=true
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -37,8 +37,7 @@ ZSH_THEME="miloshadzic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras git-fast github git-remote-branch \
-	history history-substring-search)
+plugins=(git history history-substring-search z)
 
 source $ZSH/oh-my-zsh.sh
 
