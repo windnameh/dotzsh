@@ -68,8 +68,10 @@ bindkey -M viins '^F' history-incremental-pattern-search-forward
 # gtags *.h search for C++ class
 export GTAGSFORCECPP=
 
-# 256 terminal
+# 256 color terminal
 export TERM='xterm-256color'
+# 256 color tmux
+alias tmux="tmux -2"
 
 # color minicom
 export MINICOM='-c on'
