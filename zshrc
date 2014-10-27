@@ -1,11 +1,6 @@
 # General environment settings
 export PATH=$PATH:$HOME/bin:$HOME/CLANG+LLVM/bin
 
-INTEL_VTUNE=/opt/intel/vtune_amplifier_xe
-source $INTEL_VTUNE/amplxe-vars.sh quiet
-INTEL_INSPETOR=/opt/intel/inspector_xe
-source $INTEL_INSPETOR/inspxe-vars.sh quiet
-
 # Path to your oh-my-zsh configuration.
 ZSH_SUBMOD=$HOME/.zsh/submodule
 ZSH=$HOME/.oh-my-zsh
