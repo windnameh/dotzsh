@@ -1,5 +1,7 @@
 # General environment settings
-export PATH=$PATH:$HOME/bin:$HOME/CLANG+LLVM/bin
+LLVM=$HOME/.CLANG+LLVM
+export PATH=$PATH:$HOME/bin:$LLVM/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$LLVM/lib
 
 # Path to your oh-my-zsh configuration.
 ZSH_SUBMOD=$HOME/.zsh/submodule
@@ -76,8 +78,6 @@ export MINICOM='-c on'
 fpath=($ZSH_SUBMOD/zsh-completions/src $fpath)
 
 # aliases
-alias e='emacsclient -t'
-alias ec='emacsclient -c'
 alias v='vim'
 alias m='make'
 alias g='nocorrect git'
