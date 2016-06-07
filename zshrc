@@ -48,19 +48,19 @@ source $ZSH/oh-my-zsh.sh
 source $ZSH_SUBMOD/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # history search
-#autoload up-line-or-beginning-search
-#autoload down-line-or-beginning-search
-#zle -N up-line-or-beginning-search
-#zle -N down-line-or-beginning-search
-#bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
-#bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
+autoload up-line-or-beginning-search
+autoload down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
+bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 
 # Search backwards and forwards with a pattern
-#bindkey -M vicmd '/' history-incremental-pattern-search-backward
-#bindkey -M vicmd '?' history-incremental-pattern-search-forward
+bindkey -M vicmd '/' history-incremental-pattern-search-backward
+bindkey -M vicmd '?' history-incremental-pattern-search-forward
 # set up for insert mode too
-#bindkey -M viins '^R' history-incremental-pattern-search-backward
-#bindkey -M viins '^F' history-incremental-pattern-search-forward
+bindkey -M viins '^R' history-incremental-pattern-search-backward
+bindkey -M viins '^F' history-incremental-pattern-search-forward
 
 # gtags *.h search for C++ class
 export GTAGSFORCECPP=
