@@ -39,13 +39,14 @@ ZSH_THEME="miloshadzic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker git github history history-substring-search \
-	tmux tmuxinator z zsh-navigation-tools)
+plugins=(docker git github golang history history-substring-search \
+         tig tmux tmuxinator z zsh-navigation-tools)
 
 source $ZSH/oh-my-zsh.sh
 
 # submodule
 source $ZSH_SUBMOD/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=198,bold'
 
 # history search
 autoload up-line-or-beginning-search
@@ -109,9 +110,11 @@ man() {
 		LESS_TERMCAP_md=$(printf "\e[38;5;039m") \
 		LESS_TERMCAP_me=$(printf "\e[0m") \
 		LESS_TERMCAP_se=$(printf "\e[0m") \
-		LESS_TERMCAP_so=$(printf "\e[1;41;33m") \
+		LESS_TERMCAP_so=$(printf "\e[1;48;5;160m") \
 		LESS_TERMCAP_ue=$(printf "\e[0m") \
 		LESS_TERMCAP_us=$(printf "\e[38;5;064m") \
+		LESS_TERMCAP_mr=$(printf "\e[38;5;064m") \
+		LESS_TERMCAP_mh=$(printf "\e[38;5;064m") \
 		PAGER="${commands[less]:-$PAGER}" \
 		_NROFF_U=1 \
 		PATH="$HOME/bin:$PATH" \
