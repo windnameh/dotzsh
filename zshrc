@@ -3,6 +3,14 @@ LLVM=$HOME/.CLANG+LLVM
 export PATH=$PATH:$HOME/bin:$LLVM/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$LLVM/lib
 
+# cuda
+#export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+#export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+# caffe
+#export CAFFE_ROOT=$HOME/.CAFFE_ROOT
+#export PYTHONPATH=$HOME/.CAFFE_PYTHON:$PYTHONPATH
+
 # Path to your oh-my-zsh configuration.
 ZSH_SUBMOD=$HOME/.zsh/submodule
 ZSH=$HOME/.oh-my-zsh
@@ -40,7 +48,7 @@ ZSH_THEME="miloshadzic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(docker git github golang history history-substring-search \
-         tig tmux tmuxinator z zsh-navigation-tools)
+         tig z zsh-navigation-tools)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -147,3 +155,6 @@ colors() {
 		echo; echo
 	done
 }
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
